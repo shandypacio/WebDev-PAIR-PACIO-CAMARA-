@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sugar Rush</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/home.html">
+                <img src="images/logo.png" alt="Logo" class="logo me-2" />
+                <span>Sugar Rush</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<div id="background-image">
+    <img src="images/header.png" alt="Background Image">
+</div> 
+
+<div class="container mt-5 mb-5">
+    <div class="row mb-4">
+        <div class="dropdown-container col-md-6 mx-4 text-center">
+            <select id="timeFilter">
+                <option value="all">Filter by Total Cooking Time</option>
+                <option value="30">1-30 Minutes</option>
+                <option value="60">31-60 Minutes</option>
+                <option value="120">61-120 Minutes</option>
+                <option value="more">More than 120 Minutes</option>
+            </select>            
+        </div>
+    </div>
+
+<div class="container mb-5">
+    <div class="row" id="container-recipe">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/chocolate chip cookie.png" alt="Recipe 1">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">CHOCOLATE CHIP COOKIE</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 30 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 20mins</div>
+                        <div class="badge rounded-pill">Cook Time: 10 mins</div>
+                        <div class="badge rounded-pill">Servings: 48</div>
+                      </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="cookie.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/donut.png" alt="Recipe 2">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">TASTY DONUTS</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 32 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 30 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 2 mins</div>
+                        <div class="badge rounded-pill">Servings: 1</div>
+                      </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/apple-toffee tartlets.jpg" alt="Recipe 3">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">APPLE-TOFFEE TARTLETS</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 43 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 25 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 18 mins</div>
+                        <div class="badge rounded-pill">Servings: 24</div>
+                      </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/rustic fruit tart.jpg" alt="Recipe 4">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">RUSTIC FRUIT TARTS</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 35 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 40 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 18 mins</div>
+                        <div class="badge rounded-pill">Servings: 6 inch Tarts</div>
+                      </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/french macarons.jpg" alt="Recipe 5">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">FRENCH MACARONS</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 130 mins / 2 hrs 10 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 30 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 10 mins</div>
+                        <div class="badge rounded-pill">Additional Time: 1 hr 30 mins</div>
+                        <div class="badge rounded-pill">Servings: 16</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/banana bread.jpg" alt="Recipe 6">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">BANANA BREAD</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 125 mins / 2 hrs 5 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 15 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 50 mins</div>
+                        <div class="badge rounded-pill">Additional Time: 1 hr 30 mins</div>
+                        <div class="badge rounded-pill">Servings: 1 9x5-inch loaf pan</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/cheesecake.jpg" alt="Recipe 7">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">CHEESECAKE</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 255 mins / 4 hrs 15 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 15 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 1 hour</div>
+                        <div class="badge rounded-pill">Additional Time: 3 hrs</div>
+                        <div class="badge rounded-pill">Servings: 12</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/brownies.jpg" alt="Recipe 8">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">BROWNIES</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 45 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 15 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 30 mins</div>
+                        <div class="badge rounded-pill">Servings: 16</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/cinnamon rolls.jpg" alt="Recipe 9">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">CINNAMON ROLLS</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 40 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 20 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 20 mins</div>
+                        <div class="badge rounded-pill">Servings: 9 cinnamon rolls</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/pumpkin pie.jpg" alt="Recipe 10">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">PUMPKIN PIE</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 60 mins / 1 hr</div>
+                        <div class="badge rounded-pill">Prep Time: 20 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 40 mins</div>
+                        <div class="badge rounded-pill">Servings: 8</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/tiramisu.jpg" alt="Recipe 11">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">CLASSIC TIRAMISU</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 120 mins / 2 hrs</div>
+                        <div class="badge rounded-pill">Prep Time: 30 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 30 mins</div>
+                        <div class="badge rounded-pill">Additional Time: 1 hr1</div>
+                        <div class="badge rounded-pill">Servings: 12</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/chocolate mug cake.jpg" alt="Recipe 12">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">CHOCOLATE MUG CAKE</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 7 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 5 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 2 mins</div>
+                        <div class="badge rounded-pill">Servings: 1</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/pretzels.jpg" alt="Recipe 13">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">SOFT PRETZEL</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 60 mins / 2 hrs</div>
+                        <div class="badge rounded-pill">Prep Time: 40 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 10 mins</div>
+                        <div class="badge rounded-pill">Additional Time: 1 hr 10 mins</div>
+                        <div class="badge rounded-pill">Servings: 12</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/enclairs.jpg" alt="Recipe 14">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">LUXURY ENCLAIRS</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 80 mins / 1 hr 20 mins </div>
+                        <div class="badge rounded-pill">Prep Time: 30 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 50 mins</div>
+                        <div class="badge rounded-pill">Servings: 9</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img class="card-img-top rounded" src="images/apple pie.jpg" alt="Recipe 15">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">APPLE PIE</h4>
+                    <div class="mb- text-center">
+                        <div class="badge rounded-pill">Total Time: 90 mins / 1 hr 30 mins</div>
+                        <div class="badge rounded-pill">Prep Time: 30 mins</div>
+                        <div class="badge rounded-pill">Cook Time: 1 hr</div>
+                        <div class="badge rounded-pill">Servings: 8</div>
+                        <div class="badge rounded-pill">Yield: 9-inch pie</div>
+                    </div>
+                </div>
+                <div class="card-footer mb-3 text-center">
+                    <a class="btn btn-sm text-uppercase" href="view.html">
+                        see recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
