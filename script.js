@@ -17,19 +17,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (selectedValue === 'all') {
                 shouldDisplay = true; 
             } else if (selectedValue === '30') {
-                shouldDisplay = totalTime > 0 && totalTime <= 30; // 1-30 minutes
+                shouldDisplay = totalTime > 0 && totalTime <= 30; 
             } else if (selectedValue === '60') {
-                shouldDisplay = totalTime > 30 && totalTime <= 60; // 31-60 minutes
+                shouldDisplay = totalTime > 30 && totalTime <= 60; 
             } else if (selectedValue === '120') {
-                shouldDisplay = totalTime > 60 && totalTime <= 120; // 61-120 minutes
+                shouldDisplay = totalTime > 60 && totalTime <= 120; 
             } else if (selectedValue === 'more') {
-                shouldDisplay = totalTime > 120; // More than 120 minutes
+                shouldDisplay = totalTime > 120;
             }
 
-            // Toggle card visibility
             card.parentElement.style.display = shouldDisplay ? '' : 'none';
         });
     });
 });
 
 console.log(`Selected Filter: ${selectedValue}, Total Time: ${totalTime}`);
+
+function closeOverlay() {
+    // Close the overlay
+    document.querySelector('.overlay').style.display = 'none';
+  }
