@@ -33,7 +33,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 console.log(`Selected Filter: ${selectedValue}, Total Time: ${totalTime}`);
 
+document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.getElementById('navbarcontent');
+
+    toggler.addEventListener('click', function () {
+      navbarCollapse.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!navbarCollapse.contains(event.target) && !toggler.contains(event.target)) {
+        navbarCollapse.classList.remove('show');
+      }
+    });
+  });
+
 function closeOverlay() {
     // Close the overlay
     document.querySelector('.overlay').style.display = 'none';
-  }
+}
+
+
+

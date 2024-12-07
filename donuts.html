@@ -9,6 +9,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
+        
     </head>
 <body> 
 
@@ -20,27 +21,31 @@
                     <span class="fw-bold text-white">Sugar Rush</span>
                 </a>
                 <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarcontent"
-            aria-controls="navbarcontent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-white" id="navbarcontent">
-            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item">
-                <a class="nav-link me-lg-3 text-white fw-bold" href="/home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link me-lg-3 text-white fw-bold" href="#https://www.facebook.com/Shanshandy.gale">Message</a>
-                </li>
-            </ul>
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarcontent"
+                aria-controls="navbarcontent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarcontent">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item">
+                            <a class="home-content nav-link me-lg-3 text-white fw-bold" href="/home.html" data-target="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="about-content nav-link me-lg-3 text-white fw-bold" href="/home.html#about"  data-target="about">About Us</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="about-content nav-link me-lg-3 text-white fw-bold" href="/home.html#contact">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <div class="pop-container">
@@ -54,7 +59,7 @@
                     A classic donut is a circular piece of fried dough, often light and airy on the inside with a slightly crisp, golden exterior. Its iconic shape features a central hole, perfect for even frying, and it’s often glazed or dusted with sugar for a sweet, glossy finish. The flavor is rich and buttery, with a hint of vanilla or nutmeg depending on the recipe. Whether coated in powdered sugar, topped with sprinkles, or filled with luscious creams or jellies, donuts are a delightful indulgence that pairs perfectly with a morning coffee or as a standalone treat.</p>
                 
                 <hr>
-
+            
                 <div class="recipe-step">
                     <h2>Ingredients</h2>
                     <ul class = "ingredients">
@@ -133,5 +138,7 @@
             </div>
         </div>
     </div> 
-</body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
 </html>

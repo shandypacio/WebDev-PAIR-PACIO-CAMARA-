@@ -1,19 +1,39 @@
 /* HOME PAGE */
 
-#header {
-  background-color: #e69da5;
-}
-
 .navbar-brand .logo {
-    height: 40px;
-    width: auto;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .material-icons-outlined {
-    vertical-align: middle;
-    line-height: 1px;
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.navbar-collapse {
+  max-height: 0; 
+  flex-grow: 1;
+  background-color: #e69da5;
+  transition: max-height 0.6s ease; 
+  overflow: hidden; 
+}
+
+.navbar-collapse.show {
+  max-height: 200px; 
+  text-align: center;
+}
+
+@media (min-width: 992px) { 
+  .navbar-collapse {
+    max-height: none; 
+  }
+}
+
+.navbar-nav .nav-link {
+  color: white; 
+  transition: color 0.3s ease; 
 }
 
 body {
@@ -32,9 +52,12 @@ body {
 
 
 .navbar-brand > .material-icons-outlined {
-    font-size: 40px;
+  font-size: 40px;
 }
 
+.foot {
+  background-color: #fff6ed;
+}
 
 .card {
     background-color: #fff6ed;  
@@ -202,7 +225,7 @@ body, html {
     color: #4a4a4a;
     font-size: 1rem;
   }
-  
+
   .ingredients li{
     margin-bottom: .5rem;
   }
@@ -388,6 +411,12 @@ body, html {
       }
       100% {
         transform: scale(1); 
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
       }
     }
     
